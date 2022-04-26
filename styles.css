@@ -198,3 +198,30 @@
     font-size: 0.8rem;
     font-weight: 600;
 }
+
+/*
+  Responsive design
+*/
+
+@media only screen and (max-width: 800px) {
+    #wrapper {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #wrapper__background {
+        display: none;
+    }
+
+    #wrapper__form {
+        width: 100vw;
+    }
+
+    #form__container {
+        width: 100vw;
+    }
+
+    #submit__button {
+        margin-bottom: 3rem;
+    }
+  }
