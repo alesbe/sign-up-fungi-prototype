@@ -1,16 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Themes */
 :root.light {
     --title-color: red;
     --background-img: url("images/background-light.jpg");
+    --logo-img: url("images/logo-light.svg")
 }
 
 :root.dark {
     --title-color: blue;
     --background-img: url("images/background-dark.jpg");
-}
-
-#background-image {
-    content: var(--background-img);
+    --logo-img: url("images/logo-dark.svg")
 }
 
 /* Global */
@@ -18,7 +18,9 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    font-family: 'Poppins', sans-serif;
+}
 /* Main wrapper */
 #wrapper {
     display: flex;
@@ -37,12 +39,24 @@
 #logo__container {
     position: absolute;
     display: flex;
-    width: 100%;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#logo__image {
+    content: var(--logo-img);
     height: 5rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: "red";
+}
+#logo__text {
+    font-size: 5rem;
+    color: white;
+    font-weight: 700;
 }
 #background-image {
+    content: var(--background-img);
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -51,4 +65,31 @@
 /* Form */
 #wrapper__form {
     width: 60vw;
+}
+#form__container {
+    box-shadow: 0px 1rem 0.5rem rgba(0, 0, 0, 0.1), 0px -1rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+#form__title {
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#sign-up__form {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+.input__container {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    margin: 1rem;
+}
+.form__input {
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
 }
