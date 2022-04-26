@@ -6,10 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
 
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Funginfo</h1>
+    <div id="wrapper">
+        <div id="wrapper__background">
+            <div id="logo__container"><img id="logo__image" src="images/logo-light.svg"><p id="logo__text">Fungi</p></div>
+            <img id="background-image" src="images/background-light.jpg">
+        </div>
+
+        <div id="wrapper__form">
+            <p id="info__title">
+                Sign-Up
+            </p>
+
+            <div id="form__container">
+                <p id="form__title">Let's do this!</p>
+
+                <form id="sign-up__form" method="get" action="">
+                    <div class="input__container">
+                        <label for="input-first-name">First name</label>
+                        <input id="input-first-name" class="form__input" type="text" required>
+                    </div>
+
+                    <div class="input__container">
+                        <label for="input-last-name">Last name</label>
+                        <input id="input-last-name" class="form__input" type="text"required>
+                    </div>
+
+                    <div class="input__container">
+                        <label for="input-email">Email</label>
+                        <input id="input-email" class="form__input" type="email"required>
+                    </div>
+
+                    <div class="input__container">
+                        <label for="input-phone-number">Phone number</label>
+                        <input id="input-phone-number" class="form__input" type="tel" placeholder="+00 123 45 67 89" pattern="+[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+                    </div>
+
+                    <div class="input__container">
+                        <label for="input-password">Password</label>
+                        <input id="input-password" class="form__input" type="password" required>
+                    </div>
+
+                    <div class="input__container">
+                        <label for="input-confirm-password">Confirm password</label>
+                        <input id="input-confirm-password" class="form__input" type="password" required>
+                    </div>
+                </form>
+            </div>
+
+            <button type="submit" form="sign-up__form" id="submit__button">Create Account</button>
+
+            <p id="login-text">Already have an account? <a href="">Log in</a></p>
+
+            <div id="theme-toggle"><p>Change</p><p>Theme</p></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
