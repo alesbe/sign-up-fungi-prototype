@@ -16,7 +16,7 @@
 <br>
 *Responsive dark theme*
 
-# [Open Project](alesbe.github.io/sign-up-fungi-prototype/)
+# [Open Project](https://alesbe.github.io/sign-up-fungi-prototype/)
 
 ## 🍄 Info
 A sign-up form prototype for a fictional site made with pure HTML and CSS!
