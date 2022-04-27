@@ -42,6 +42,10 @@
     color: var(--font-color);
 }
 
+body {
+    height: 100%;
+}
+
 /* Main wrapper */
 #wrapper {
     display: flex;
@@ -162,6 +166,7 @@
 #submit__button:focus {
     transform: scale(1.1);
 }
+
 #login-text {
     position: absolute;
     left: 0;
@@ -174,6 +179,7 @@
 }
 
 #theme-toggle {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,7 +189,6 @@
     border-radius: 100%;
     background-color: var(--accent-three);
 
-    position: absolute;
     bottom: 0;
     right: 0;
     margin: 1rem;
@@ -204,6 +209,10 @@
 */
 
 @media only screen and (max-width: 800px) {
+    body {
+        background-color: var(--accent-one);
+    }
+    
     #wrapper {
         flex-direction: column;
         width: 100vw;
@@ -226,4 +235,4 @@
         height: 4rem;
         margin-bottom: 2.5rem;
     }
-  }
+}
