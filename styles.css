@@ -217,11 +217,13 @@
         width: 100vw;
     }
 
-    #form__container {
-        width: 100vw;
-    }
-
     #submit__button {
         margin-bottom: 3rem;
+    }
+
+    #theme-toggle {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 2.5rem;
     }
   }
