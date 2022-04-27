@@ -6,7 +6,7 @@
 ![dark theme](https://i.imgur.com/VTSFGFb.png)
 *Dark theme*
 
-# [Open Project]()
+# [Open Project](alesbe.github.io/sign-up-fungi-prototype/)
 A sign-up form prototype for a fictional site made with pure HTML, CSS and JS.
 
 ## 🍄 Info
