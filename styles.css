@@ -18,6 +18,7 @@
     --accent-four: #FFEEEE;
 
     --font-color: black;
+    --input-text-color: var(--font-color);
     --logo-color: white;
     --logo-background-color: rgba(0, 0, 0, 0.8);
 }
@@ -30,6 +31,7 @@
     --accent-four: #FCDEC0;
 
     --font-color: #FCDEC0;
+    --input-text-color: var(--accent-one);
     --logo-color: black;
     --logo-background-color: rgba(255, 255, 255, 0.5);
 }
@@ -131,6 +133,7 @@ body {
     padding: 1rem;
     font-weight: 300;
     background-color: var(--accent-three);
+    color: var(--input-text-color);
     border: none;
     border-radius: 1rem;
 
